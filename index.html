@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERDEN Cruise</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="header">
+  <div class="nav">
+
+    <h1>ERDEN</h1>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="navigation" id="navigation">
+      <ul>
+        <li><a href="#hero">The Ship</a></li>
+        <li><a href="#deck-plan">Deck Plan</a></li>
+        <li><a href="#gallery-main">Gallery</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <button class="book-btn" id="openBooking">Book Now</button>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="hero" class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Luxury Cruise Experience</div>
+
+    <h2>Welcome to the most <span>fabulous</span> place</h2>
+    <p>Create unforgettable memories with elegance and style.</p>
+
+    <div class="hero-buttons">
+      <button class="btn-outline">View More</button>
+      <button class="btn-solid">Contact</button>
+    </div>
+  </div>
+
+  <!-- Floating Stats Glass -->
+<section class="hero-stats-glass stats-section">
+  <div class="stat">
+    <h3 data-target="15">0</h3>
+    <p>Decks</p>
+  </div>
+  <div class="stat">
+    <h3 data-target="200">0</h3>
+    <p>Guests</p>
+  </div>
+  <div class="stat">
+    <h3 data-target="12">0</h3>
+    <p>Destinations</p>
+  </div>
+</section>
+
+</section>
+
+
+
+<!-- ================= GALLERY ================= -->
+
+<main id="gallery-main" class="section">
+  <h2 class="section-title">Photo Collection</h2>
+
+  <div class="photo-grid">
+    <div class="card big">
+      <img src="img/pexels-george-desipris-1266847.jpg" alt="">
+    </div>
+
+    <div class="card">
+      <img src="img/pexels-esrageziyor-45760220-12473550.jpg" alt="">
+    </div>
+
+    <div class="card small">
+      <img src="img/pexels-masi-461420600-20520742.jpg" alt="">
+    </div>
+
+    <div class="card tall">
+      <img src="img/pexels-alleksana-10611879.jpg" alt="">
+    </div>
+
+    <div class="card wide">
+      <img src="img/pexels-matreding-17719837.jpg" alt="">
+    </div>
+
+    <div class="card wide">
+      <img src="img/pexels-burcu-bircan-680818596-18169958.jpg" alt="">
+    </div>
+  </div>
+</main>
+
+<!-- ================= DECK EXPLORER ================= -->
+
+<section class="deck-explorer section" id="deck-plan">
+
+  <h2 class="section-title">Explore The Ship</h2>
+  <p class="section-sub">
+    Discover each deck experience — relaxation, comfort, and luxury.
+  </p>
+
+  <div class="deck-tabs">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="aqua">Aqua</button>
+    <button data-filter="cabin">Cabin</button>
+    <button data-filter="luxury">Luxury</button>
+  </div>
+
+  <div class="deck-row">
+
+    <div class="deck-glass reveal" data-deck="aqua">
+      <img src="img/pexels-mattingly-marinaccio-283679117-13048487.jpg" alt="">
+      <div class="glass-info">
+        <h3>Aqua Deck</h3>
+        <p>Pools • Lounge • Sky Bar</p>
+      </div>
+    </div>
+
+    <div class="deck-glass reveal" data-deck="cabin">
+      <img src="img/pexels-shawnnadee-11311.jpg" alt="">
+      <div class="glass-info">
+        <h3>Cabin Deck</h3>
+        <p>Ocean suites & rooms</p>
+      </div>
+    </div>
+
+    <div class="deck-glass reveal" data-deck="luxury">
+      <img src="img/pexels-jay-ybarra-1587808679-27383326.jpg" alt="">
+      <div class="glass-info">
+        <h3>Luxury Deck</h3>
+        <p>Dining & premium halls</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= STORY SECTION ================= -->
+
+<section class="deck-story">
+  <div class="story-content">
+    <h2>Every Deck Tells a Story</h2>
+    <p>
+      Designed for exploration and comfort — each level offers a unique onboard world.
+    </p>
+  </div>
+</section>
+
+<div class="modal" id="bookModal">
+  <div class="modal-box">
+
+    <span class="close-btn" id="closeBooking">&times;</span>
+
+    <h3>Book Your Trip</h3>
+
+    <input type="text" id="fullName" placeholder="Full Name">
+    <small class="error" id="nameError"></small>
+
+    <input type="email" id="email" placeholder="Email">
+    <small class="error" id="emailError"></small>
+
+    <input type="date" id="date">
+    <small class="error" id="dateError"></small>
+
+    <button id="confirmBooking">Confirm Booking</button>
+
+    <div class="success-box" id="successBox">
+      <div class="checkmark">✔</div>
+      <p>Booking Confirmed!</p>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+  <div class="THE-END">
+    @copyright | ERDEN All rights reserved 🤍
+  </div>
+</footer>
+
+</body>
+</html>
