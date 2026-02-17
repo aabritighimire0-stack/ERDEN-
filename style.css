@@ -512,7 +512,7 @@ body{
 
 .deck-story{
   margin-top:120px;
-  background:url("img/pexels-christian-pfeifer-3550788-5334261.jpg") center/cover fixed;
+  background:url("pexels-christian-pfeifer-3550788-5334261.jpg") center/cover fixed;
   padding:140px 20px;
   text-align:center;
 }
@@ -722,4 +722,5 @@ body{
     grid-template-columns:repeat(2,1fr);
   }
 }
+
 
