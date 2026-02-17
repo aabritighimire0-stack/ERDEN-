@@ -107,7 +107,7 @@ body{
 .hero{
   position:relative;
   height:100vh;
-  background:url("img/background.kng.jpg") center/cover no-repeat fixed;
+  background:url("background.kng.jpg") center/cover no-repeat fixed;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -722,3 +722,4 @@ body{
     grid-template-columns:repeat(2,1fr);
   }
 }
+
